@@ -6,13 +6,15 @@ import {AppComponent} from './app.component';
 import {NeonButtonComponent} from './neon-button/neon-button.component';
 import {TransparentButtonComponent} from './transparent-button/transparent-button.component';
 import {TranparentFormComponent} from './tranparent-form/tranparent-form.component';
+import {HeartbeatComponent} from './heartbeat/heartbeat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NeonButtonComponent,
     TransparentButtonComponent,
-    TranparentFormComponent
+    TranparentFormComponent,
+    HeartbeatComponent
   ],
   imports: [
     BrowserModule,
