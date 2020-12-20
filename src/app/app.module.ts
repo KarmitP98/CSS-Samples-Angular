@@ -9,6 +9,7 @@ import {TranparentFormComponent} from './tranparent-form/tranparent-form.compone
 import {HeartbeatComponent} from './heartbeat/heartbeat.component';
 import {ToastComponent} from './toast/toast.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {StartupPageComponent} from './startup-page/startup-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     TransparentButtonComponent,
     TranparentFormComponent,
     HeartbeatComponent,
-    ToastComponent
+    ToastComponent,
+    StartupPageComponent
   ],
   imports: [
     BrowserModule,
