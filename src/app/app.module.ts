@@ -7,6 +7,8 @@ import {NeonButtonComponent} from './neon-button/neon-button.component';
 import {TransparentButtonComponent} from './transparent-button/transparent-button.component';
 import {TranparentFormComponent} from './tranparent-form/tranparent-form.component';
 import {HeartbeatComponent} from './heartbeat/heartbeat.component';
+import {ToastComponent} from './toast/toast.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,13 +16,16 @@ import {HeartbeatComponent} from './heartbeat/heartbeat.component';
     NeonButtonComponent,
     TransparentButtonComponent,
     TranparentFormComponent,
-    HeartbeatComponent
+    HeartbeatComponent,
+    ToastComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
