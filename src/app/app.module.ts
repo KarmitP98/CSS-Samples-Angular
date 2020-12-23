@@ -10,6 +10,8 @@ import {HeartbeatComponent} from './heartbeat/heartbeat.component';
 import {ToastComponent} from './toast/toast.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {StartupPageComponent} from './startup-page/startup-page.component';
+import {HexagonHoverComponent} from './hexagon-hover/hexagon-hover.component';
+import {NeomorphComponent} from './neomorph/neomorph.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import {StartupPageComponent} from './startup-page/startup-page.component';
     TranparentFormComponent,
     HeartbeatComponent,
     ToastComponent,
-    StartupPageComponent
+    StartupPageComponent,
+    HexagonHoverComponent,
+    NeomorphComponent
   ],
   imports: [
     BrowserModule,
