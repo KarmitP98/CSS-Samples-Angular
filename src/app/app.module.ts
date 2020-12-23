@@ -12,6 +12,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {StartupPageComponent} from './startup-page/startup-page.component';
 import {HexagonHoverComponent} from './hexagon-hover/hexagon-hover.component';
 import {NeomorphComponent} from './neomorph/neomorph.component';
+import {DropdownMenuComponent} from './dropdown-menu/dropdown-menu.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {NeomorphComponent} from './neomorph/neomorph.component';
     ToastComponent,
     StartupPageComponent,
     HexagonHoverComponent,
-    NeomorphComponent
+    NeomorphComponent,
+    DropdownMenuComponent
   ],
   imports: [
     BrowserModule,
