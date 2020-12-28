@@ -13,6 +13,7 @@ import {StartupPageComponent} from './startup-page/startup-page.component';
 import {HexagonHoverComponent} from './hexagon-hover/hexagon-hover.component';
 import {NeomorphComponent} from './neomorph/neomorph.component';
 import {DropdownMenuComponent} from './dropdown-menu/dropdown-menu.component';
+import { GlassMorphismComponent } from './glass-morphism/glass-morphism.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {DropdownMenuComponent} from './dropdown-menu/dropdown-menu.component';
     StartupPageComponent,
     HexagonHoverComponent,
     NeomorphComponent,
-    DropdownMenuComponent
+    DropdownMenuComponent,
+    GlassMorphismComponent
   ],
   imports: [
     BrowserModule,
