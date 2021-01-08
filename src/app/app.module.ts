@@ -14,6 +14,10 @@ import {HexagonHoverComponent} from './hexagon-hover/hexagon-hover.component';
 import {NeomorphComponent} from './neomorph/neomorph.component';
 import {DropdownMenuComponent} from './dropdown-menu/dropdown-menu.component';
 import { GlassMorphismComponent } from './glass-morphism/glass-morphism.component';
+import { ComponentsComponent } from './components/components.component';
+import { SideMenuComponent } from './side-menu/side-menu.component';
+import { VideoComponent } from './video/video.component';
+import {WebcamModule} from "ngx-webcam";
 
 @NgModule({
   declarations: [
@@ -27,13 +31,17 @@ import { GlassMorphismComponent } from './glass-morphism/glass-morphism.componen
     HexagonHoverComponent,
     NeomorphComponent,
     DropdownMenuComponent,
-    GlassMorphismComponent
+    GlassMorphismComponent,
+    ComponentsComponent,
+    SideMenuComponent,
+    VideoComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        AppRoutingModule,
+        WebcamModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

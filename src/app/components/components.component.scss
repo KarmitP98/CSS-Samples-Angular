@@ -1,0 +1,195 @@
+
+
+main{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  min-height: 100vh;
+  width: 100%;
+
+  background: #bebfb1;
+
+  position: relative;
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: flex-start;
+
+
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.navbar{
+  position: relative;
+  display: flex;
+
+  flex-direction: row;
+
+  height: fit-content;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  align-items: center;
+  justify-content: center;
+
+
+  nav{
+    position: relative;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    overflow: auto;
+
+    height: 100%;
+    width: 90%;
+
+
+    background: var(--primary);
+    color: white;
+
+    align-items: center;
+
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+}
+
+
+section{
+  border: solid 1px #0c0326;
+  border-radius: 5px;
+
+  padding: 8px;
+  margin: 8px;
+
+  height: fit-content;
+  width: fit-content;
+
+}
+
+.button{
+  display: block;
+  padding: 8px 24px;
+  background-color: var(--normal);
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Chakra Petch", sans-serif;
+
+  margin: 4px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.primary{
+  background: var(--primary);
+  color: white;
+}
+
+.secondary{
+  background: var(--secondary);
+  color: white;
+}
+
+.tertiary{
+  background: var(--tertiary);
+  color: white;
+}
+
+.success{
+  background: var(--success);
+  color: black;
+}
+
+.warn{
+  background: var(--warn);
+  color: white;
+}
+
+.card{
+  position: relative;
+  display: flex;
+
+  width: 500px;
+  min-width: 200px;
+
+  flex-direction: column;
+
+  padding: 8px;
+
+  background: var(--tertiary);
+  border-radius: 4px;
+
+  color: white;
+
+  box-shadow: 2px 2px 4px #171718;
+
+}
+
+.card-header{
+  margin: 4px 8px;
+}
+
+.card-title, .card-sub1, .card-sub2, .card-content, .card-header, .card-action, .card-header, .card{
+  overflow-wrap: break-word;
+  font-family: "Chakra Petch", sans-serif;
+  color: white;
+}
+
+.card-title{
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.card-sub1{
+  font-weight: 300;
+  font-size: 16px;
+  color: #bebfb1;
+}
+
+.card-sub2{
+  font-weight: 300;
+  font-size: 12px;
+  color: #BEBFB1;
+}
+
+.card-content{
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+
+  overflow-wrap: break-word;
+}
+
+.card-footer{
+  position: relative;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin-top: 16px;
+
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.card-action{
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+
+}
