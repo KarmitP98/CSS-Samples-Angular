@@ -13,6 +13,9 @@ import {StartupPageComponent} from './startup-page/startup-page.component';
 import {HexagonHoverComponent} from './hexagon-hover/hexagon-hover.component';
 import {NeomorphComponent} from './neomorph/neomorph.component';
 import {DropdownMenuComponent} from './dropdown-menu/dropdown-menu.component';
+import { CustomCompsComponent } from './custom-comps/custom-comps.component';
+import { PanelComponent } from './panel/panel.component';
+import { SlideComponent } from './slide/slide.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import {DropdownMenuComponent} from './dropdown-menu/dropdown-menu.component';
     StartupPageComponent,
     HexagonHoverComponent,
     NeomorphComponent,
-    DropdownMenuComponent
+    DropdownMenuComponent,
+    CustomCompsComponent,
+    PanelComponent,
+    SlideComponent
   ],
   imports: [
     BrowserModule,

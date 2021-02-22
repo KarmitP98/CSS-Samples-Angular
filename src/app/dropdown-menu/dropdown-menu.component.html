@@ -1,6 +1,6 @@
 <body>
 <nav>
-  <div class="dropdown">
+  <div class="dropdown" [ngClass]="opened ? 'open':''">
     <button>Home</button>
     <div class="projects">
       <button>Projects</button>
@@ -19,6 +19,16 @@
         <li><a href="#">Menu 3</a></li>
         <li><a href="#">Menu 4</a></li>
       </ul>
+    </div>
+  </div>
+  <div class="hamburger" #hammy (click)="click()">
+    <div class="line" [ngClass]="opened ? 'open':''">
+    </div>
+    <div class="line" [ngClass]="opened ? 'open':''">
+
+    </div>
+    <div class="line" [ngClass]="opened ? 'open':''">
+
     </div>
   </div>
 </nav>
