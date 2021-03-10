@@ -49,8 +49,8 @@ nav {
     opacity: 0;
     pointer-events: none;
     transition: 0.2s ease-in-out;
-    transform: translateY(-10px) scaleY(0);
-    transform-origin: top;
+    transform: translateY(-10px) scale(0);
+    transform-origin: top right;
 
     li a {
       text-decoration: none;
@@ -92,7 +92,7 @@ nav {
     &:focus + ul {
       opacity: 1;
       pointer-events: all;
-      transform: translateY(0px) scaleY(1);
+      transform: translateY(0px) scale(1);
     }
 
   }

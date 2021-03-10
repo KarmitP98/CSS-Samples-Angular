@@ -24,6 +24,7 @@ import {SideMenuComponent} from './side-menu/side-menu.component';
 import {VideoComponent} from './video/video.component';
 import {WebcamModule} from 'ngx-webcam';
 import {DropdownMenuComponent} from './dropdown-menu/dropdown-menu.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import {DropdownMenuComponent} from './dropdown-menu/dropdown-menu.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    WebcamModule
+    WebcamModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

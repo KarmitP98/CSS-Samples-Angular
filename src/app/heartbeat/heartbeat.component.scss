@@ -21,7 +21,7 @@ a {
   font-size: 24px;
   overflow: hidden;
   border-radius: 50%;
-  animation: heartbeat 1s forwards infinite;
+  //animation: heartbeat 1s forwards infinite;
   filter: blur(1px);
   transition: 0.2s;
 }
@@ -47,3 +47,4 @@ a:hover {
     box-shadow: none;
   }
 }
+
