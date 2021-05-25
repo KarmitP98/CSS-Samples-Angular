@@ -25,6 +25,12 @@ import {VideoComponent} from './video/video.component';
 import {WebcamModule} from 'ngx-webcam';
 import {DropdownMenuComponent} from './dropdown-menu/dropdown-menu.component';
 import {MatIconModule} from '@angular/material/icon';
+import {DragAndDropComponent} from './drag-and-drop/drag-and-drop.component';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {CardsComponent} from './cards/cards.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -46,6 +52,8 @@ import {MatIconModule} from '@angular/material/icon';
     ComponentsComponent,
     SideMenuComponent,
     VideoComponent,
+    DragAndDropComponent,
+    CardsComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +61,10 @@ import {MatIconModule} from '@angular/material/icon';
     AppRoutingModule,
     WebcamModule,
     MatIconModule,
+    DragDropModule,
+    MatCardModule,
+    MatButtonModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
