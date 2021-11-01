@@ -1,0 +1,19 @@
+.clip-path {
+  display: grid;
+  place-items: center;
+
+  .rectangle {
+    display: flex;
+    padding: 1em;
+    width: 50%;
+    height: 100px;
+    background-color: #03a9f4;
+    border-radius: 50px;
+
+    .circle {
+      clip-path: circle(50px);
+    }
+  }
+
+
+}

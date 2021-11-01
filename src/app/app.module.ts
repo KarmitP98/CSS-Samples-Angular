@@ -31,7 +31,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {CardsComponent} from './cards/cards.component';
 import {MatExpansionModule} from '@angular/material/expansion';
-import { LightBulbComponent } from './light-bulb/light-bulb.component';
+import {LightBulbComponent} from './light-bulb/light-bulb.component';
+import {ClipPathComponent} from './clip-path/clip-path.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { LightBulbComponent } from './light-bulb/light-bulb.component';
     DragAndDropComponent,
     CardsComponent,
     LightBulbComponent,
+    ClipPathComponent,
   ],
   imports: [
     BrowserModule,
