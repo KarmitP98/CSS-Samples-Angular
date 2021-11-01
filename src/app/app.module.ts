@@ -31,6 +31,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {CardsComponent} from './cards/cards.component';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { LightBulbComponent } from './light-bulb/light-bulb.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     VideoComponent,
     DragAndDropComponent,
     CardsComponent,
+    LightBulbComponent,
   ],
   imports: [
     BrowserModule,

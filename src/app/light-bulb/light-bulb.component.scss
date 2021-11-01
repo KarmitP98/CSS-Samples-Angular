@@ -1,0 +1,36 @@
+@mixin fcc{
+  display: flex;
+  position: relative;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+.home{
+  @include fcc;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: #aae2ff;
+
+
+  .bulb{
+    @include fcc;
+
+    width: 50%;
+    height: 50vw;
+
+    .bulb-glow{
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+
+    }
+
+  }
+
+}
