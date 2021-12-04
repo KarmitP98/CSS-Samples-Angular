@@ -33,6 +33,8 @@ import {CardsComponent} from './cards/cards.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {LightBulbComponent} from './light-bulb/light-bulb.component';
 import {ClipPathComponent} from './clip-path/clip-path.component';
+import {StoreModule} from '@ngrx/store';
+import {numberReducer} from './store/number.reducer';
 
 @NgModule({
   declarations: [
@@ -68,7 +70,8 @@ import {ClipPathComponent} from './clip-path/clip-path.component';
     DragDropModule,
     MatCardModule,
     MatButtonModule,
-    MatExpansionModule
+    MatExpansionModule,
+    StoreModule.forRoot({num: numberReducer}, {}),
   ],
   providers: [],
   bootstrap: [AppComponent]
