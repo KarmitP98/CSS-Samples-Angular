@@ -35,6 +35,7 @@ import {LightBulbComponent} from './light-bulb/light-bulb.component';
 import {ClipPathComponent} from './clip-path/clip-path.component';
 import {StoreModule} from '@ngrx/store';
 import {numberReducer} from './store/number.reducer';
+import {ClipPathRevealComponent} from './clip-path-reveal/clip-path-reveal.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import {numberReducer} from './store/number.reducer';
     CardsComponent,
     LightBulbComponent,
     ClipPathComponent,
+    ClipPathRevealComponent,
   ],
   imports: [
     BrowserModule,

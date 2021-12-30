@@ -1,0 +1,32 @@
+.clip-path-reveal {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  .menu-icon {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    cursor: pointer;
+    z-index: 1;
+
+    &.active {
+      color: white;
+    }
+  }
+
+  .component {
+    width: 100%;
+    height: 100%;
+    background-color: #000135;
+    clip-path: circle(0 at top right);
+    display: grid;
+    place-items: center;
+    transition: all 0.25s ease-in-out;
+    color: white;
+
+    &.active {
+      clip-path: circle(200% at top right);
+    }
+  }
+}
