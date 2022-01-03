@@ -36,6 +36,7 @@ import {ClipPathComponent} from './clip-path/clip-path.component';
 import {StoreModule} from '@ngrx/store';
 import {numberReducer} from './store/number.reducer';
 import {ClipPathRevealComponent} from './clip-path-reveal/clip-path-reveal.component';
+import {LoadUpComponent} from './load-up/load-up.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import {ClipPathRevealComponent} from './clip-path-reveal/clip-path-reveal.compo
     LightBulbComponent,
     ClipPathComponent,
     ClipPathRevealComponent,
+    LoadUpComponent,
   ],
   imports: [
     BrowserModule,
