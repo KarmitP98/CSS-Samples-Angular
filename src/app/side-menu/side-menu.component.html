@@ -1,44 +1,44 @@
 <main>
-  <div class="navbar">
-    <div class="nav">
-      <div class="all">></div>
-      <div class="menu" id="m1">
-        <div class="menu-button">Location</div>
-        <div class="menu-content">Content 1</div>
+  <div class='navbar'>
+    <div class='nav'>
+      <div class='all'>></div>
+      <div class='menu' id='m1'>
+        <div class='menu-button'>Location</div>
+        <div class='menu-content'>Content 1</div>
       </div>
-      <div class="menu" id="m2">
-        <div class="menu-button">Speed</div>
-        <div class="menu-content">Content 2</div>
+      <div class='menu' id='m2'>
+        <div class='menu-button'>Speed</div>
+        <div class='menu-content'>Content 2</div>
       </div>
-      <div class="menu" id="m3">
-        <div class="menu-button">Temperature</div>
-        <div class="menu-content">Content 3</div>
+      <div class='menu' id='m3'>
+        <div class='menu-button'>Temperature</div>
+        <div class='menu-content'>Content 3</div>
       </div>
-      <div class="menu" id="m4">
-        <div class="menu-button">Rotation</div>
-        <div class="menu-content">Content 4</div>
+      <div class='menu' id='m4'>
+        <div class='menu-button'>Rotation</div>
+        <div class='menu-content'>Content 4</div>
       </div>
-      <div class="menu" id="m5">
-        <div class="menu-button">Misc</div>
-        <div class="menu-content">Content 5</div>
+      <div class='menu' id='m5'>
+        <div class='menu-button'>Misc</div>
+        <div class='menu-content'>Content 5</div>
       </div>
     </div>
   </div>
 
 
-  <div id="panel">
-    <ul [class.opened]="opened" class="menu">
-      <li (click)="selected = 1" [class.selected]="selected === 1" class="list-item">Item 1</li>
-      <li (click)="selected = 2" [class.selected]="selected === 2" class="list-item">Item 2</li>
-      <li (click)="selected = 3" [class.selected]="selected === 3" class="list-item">Item 3</li>
-      <li (click)="selected = 4" [class.selected]="selected === 4" class="list-item">Item 4</li>
-      <li (click)="selected = 5" [class.selected]="selected === 5" class="list-item">Item 5</li>
+  <div id='panel'>
+    <ul [class.opened]='opened' class='menu'>
+      <li (click)='selected = 1' [class.selected]='selected === 1' class='list-item'>Item 1</li>
+      <li (click)='selected = 2' [class.selected]='selected === 2' class='list-item'>Item 2</li>
+      <li (click)='selected = 3' [class.selected]='selected === 3' class='list-item'>Item 3</li>
+      <li (click)='selected = 4' [class.selected]='selected === 4' class='list-item'>Item 4</li>
+      <li (click)='selected = 5' [class.selected]='selected === 5' class='list-item'>Item 5</li>
     </ul>
-    <button (click)="opened = !opened" id="menu-button">
-      <span class="section">
+    <button (click)='opened = !opened' id='menu-button'>
+      <span class='section'>
         S1
       </span>
-      <span class="section">
+      <span class='section'>
         S2
       </span>
     </button>

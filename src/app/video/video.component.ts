@@ -9,17 +9,16 @@ import {Observable, Subject} from 'rxjs';
 })
 export class VideoComponent implements OnInit {
 
+  title = 'gfgangularwebcam';
+  public webcamImage: WebcamImage | undefined;
+  private trigger: Subject<void> = new Subject<void>();
+
   constructor() {
   }
 
   public get triggerObservable(): Observable<void> {
     return this.trigger.asObservable();
   }
-
-  title = 'gfgangularwebcam';
-
-  public webcamImage: WebcamImage | undefined;
-  private trigger: Subject<void> = new Subject<void>();
 
   ngOnInit(): void {
   }

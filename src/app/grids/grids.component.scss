@@ -1,26 +1,26 @@
 .grids {
-  height: 100%;
-  width: 100%;
   position: relative;
+  width: 100%;
+  height: 100%;
 
 
   .major {
+    display: grid;
     width: 100%;
     height: 100%;
-    display: grid;
     padding: 1em;
     grid-template-rows: repeat(auto-fit, 10vh);
     grid-template-columns: 200px;
     grid-gap: 1em;
 
     .minor {
-      height: 100%;
       width: 100%;
+      height: 100%;
       background: blue;
 
       img {
-        height: 100%;
         width: 100%;
+        height: 100%;
         object-fit: cover;
       }
     }

@@ -1,22 +1,24 @@
 <body>
-<div class="big-container">
+  <div class='big-container'>
 
-  <div #card (click)="activate($event)" *ngFor="let movie of movies" cdkDrag cdkDragBoundary=".big-container"
-       class="card">
-    <div class="card-header">
-      <div class="card-title">
-        {{movie}}
+    <div
+      #card (click)='activate($event)' *ngFor='let movie of movies' cdkDrag cdkDragBoundary='.big-container'
+      class='card'
+    >
+      <div class='card-header'>
+        <div class='card-title'>
+          {{movie}}
+        </div>
+      </div>
+      <div class='card-body'>
+        This is the card content
+      </div>
+      <div class='card-footer'>
+        <button disabled mat-icon-button>
+          <mat-icon cdkDragHandle>open_with</mat-icon>
+        </button>
       </div>
     </div>
-    <div class="card-body">
-      This is the card content
-    </div>
-    <div class="card-footer">
-      <button disabled mat-icon-button>
-        <mat-icon cdkDragHandle>open_with</mat-icon>
-      </button>
-    </div>
-  </div>
 
-</div>
+  </div>
 </body>

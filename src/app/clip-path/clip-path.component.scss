@@ -4,11 +4,11 @@
 
   .rectangle {
     display: flex;
-    padding: 1em;
     width: 50%;
     height: 100px;
-    background-color: #03a9f4;
+    padding: 1em;
     border-radius: 50px;
+    background-color: #03a9f4;
 
     .circle {
       clip-path: circle(50px);

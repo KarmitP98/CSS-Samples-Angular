@@ -1,195 +1,194 @@
 
-
-main{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-  min-height: 100vh;
-  width: 100%;
-
-  background: #bebfb1;
-
+main {
+  font-family: 'Chakra Petch', sans-serif;
   position: relative;
   display: flex;
 
   flex-wrap: wrap;
-
   justify-content: flex-start;
 
+  box-sizing: border-box;
 
-  font-family: "Chakra Petch", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+
+  margin: 0;
+
+  padding: 0;
+
+
+  background: #bebfb1;
 }
 
-.navbar{
+.navbar {
   position: relative;
   display: flex;
 
-  flex-direction: row;
+  align-items: center;
 
-  height: fit-content;
+  flex-direction: row;
+  justify-content: center;
+
   width: 100%;
+  height: fit-content;
 
   margin: 0;
   padding: 0;
 
-  align-items: center;
-  justify-content: center;
 
-
-  nav{
+  nav {
     position: relative;
     display: flex;
 
-    flex-direction: row;
-    flex-wrap: nowrap;
-
     overflow: auto;
+    align-items: center;
 
-    height: 100%;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
     width: 90%;
 
 
-    background: var(--primary);
+    height: 100%;
     color: white;
 
-    align-items: center;
+    border-bottom-right-radius: 5px;
 
 
     border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    background: var(--primary);
   }
 
 }
 
 
-section{
+section {
+  width: fit-content;
+  height: fit-content;
+
+  margin: 8px;
+  padding: 8px;
+
   border: solid 1px #0c0326;
   border-radius: 5px;
 
-  padding: 8px;
-  margin: 8px;
-
-  height: fit-content;
-  width: fit-content;
-
 }
 
-.button{
-  display: block;
-  padding: 8px 24px;
-  background-color: var(--normal);
-  color: black;
+.button {
+  font-family: 'Chakra Petch', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Chakra Petch", sans-serif;
-
+  display: block;
   margin: 4px;
-  text-align: center;
-  border-radius: 4px;
+  padding: 8px 24px;
   cursor: pointer;
-}
 
-.primary{
-  background: var(--primary);
-  color: white;
-}
-
-.secondary{
-  background: var(--secondary);
-  color: white;
-}
-
-.tertiary{
-  background: var(--tertiary);
-  color: white;
-}
-
-.success{
-  background: var(--success);
+  text-align: center;
   color: black;
+  border-radius: 4px;
+  background-color: var(--normal);
 }
 
-.warn{
-  background: var(--warn);
+.primary {
   color: white;
+  background: var(--primary);
 }
 
-.card{
+.secondary {
+  color: white;
+  background: var(--secondary);
+}
+
+.tertiary {
+  color: white;
+  background: var(--tertiary);
+}
+
+.success {
+  color: black;
+  background: var(--success);
+}
+
+.warn {
+  color: white;
+  background: var(--warn);
+}
+
+.card {
   position: relative;
   display: flex;
 
-  width: 500px;
-  min-width: 200px;
-
   flex-direction: column;
+  width: 500px;
+
+  min-width: 200px;
 
   padding: 8px;
 
-  background: var(--tertiary);
+  color: white;
   border-radius: 4px;
 
-  color: white;
+  background: var(--tertiary);
 
   box-shadow: 2px 2px 4px #171718;
 
 }
 
-.card-header{
+.card-header {
   margin: 4px 8px;
 }
 
-.card-title, .card-sub1, .card-sub2, .card-content, .card-header, .card-action, .card-header, .card{
-  overflow-wrap: break-word;
-  font-family: "Chakra Petch", sans-serif;
+.card-title, .card-sub1, .card-sub2, .card-content, .card-header, .card-action, .card-header, .card {
+  font-family: 'Chakra Petch', sans-serif;
   color: white;
+  overflow-wrap: break-word;
 }
 
-.card-title{
-  font-weight: 700;
+.card-title {
   font-size: 32px;
+  font-weight: 700;
 }
 
-.card-sub1{
-  font-weight: 300;
+.card-sub1 {
   font-size: 16px;
+  font-weight: 300;
   color: #bebfb1;
 }
 
-.card-sub2{
-  font-weight: 300;
+.card-sub2 {
   font-size: 12px;
-  color: #BEBFB1;
+  font-weight: 300;
+  color: #bebfb1;
 }
 
-.card-content{
-  font-weight: 300;
+.card-content {
   font-size: 16px;
+  font-weight: 300;
   color: white;
 
   overflow-wrap: break-word;
 }
 
-.card-footer{
-  position: relative;
+.card-footer {
+  font-size: 24px;
 
-  bottom: 0;
-  left: 0;
+  font-weight: 500;
+  position: relative;
   right: 0;
 
-  margin-top: 16px;
+  bottom: 0;
 
-  font-size: 24px;
-  font-weight: 500;
+  left: 0;
+  margin-top: 16px;
 }
 
-.card-action{
+.card-action {
   display: flex;
-  flex-direction: row;
-
-  justify-content: space-between;
   align-items: center;
+
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 
 
 }

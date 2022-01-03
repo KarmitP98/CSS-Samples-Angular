@@ -1,35 +1,35 @@
 <body>
-<nav>
-  <div class="dropdown" [ngClass]="opened ? 'open':''">
-    <button>Home</button>
-    <div class="projects">
-      <button>Projects</button>
-      <ul>
-        <li><a href="#">Menu 1</a></li>
-        <li><a href="#">Menu 2</a></li>
-        <li><a href="#">Menu 3</a></li>
-        <li><a href="#">Menu 4</a></li>
-      </ul>
+  <nav>
+    <div [ngClass]="opened ? 'open':''" class='dropdown'>
+      <button>Home</button>
+      <div class='projects'>
+        <button>Projects</button>
+        <ul>
+          <li><a href='#'>Menu 1</a></li>
+          <li><a href='#'>Menu 2</a></li>
+          <li><a href='#'>Menu 3</a></li>
+          <li><a href='#'>Menu 4</a></li>
+        </ul>
+      </div>
+      <div class='products'>
+        <button>Products</button>
+        <ul>
+          <li><a href='#'>Menu 1</a></li>
+          <li><a href='#'>Menu 2</a></li>
+          <li><a href='#'>Menu 3</a></li>
+          <li><a href='#'>Menu 4</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="products">
-      <button>Products</button>
-      <ul>
-        <li><a href="#">Menu 1</a></li>
-        <li><a href="#">Menu 2</a></li>
-        <li><a href="#">Menu 3</a></li>
-        <li><a href="#">Menu 4</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="hamburger" #hammy (click)="click()">
-    <div class="line" [ngClass]="opened ? 'open':''">
-    </div>
-    <div class="line" [ngClass]="opened ? 'open':''">
+    <div #hammy (click)='click()' class='hamburger'>
+      <div [ngClass]="opened ? 'open':''" class='line'>
+      </div>
+      <div [ngClass]="opened ? 'open':''" class='line'>
 
-    </div>
-    <div class="line" [ngClass]="opened ? 'open':''">
+      </div>
+      <div [ngClass]="opened ? 'open':''" class='line'>
 
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 </body>

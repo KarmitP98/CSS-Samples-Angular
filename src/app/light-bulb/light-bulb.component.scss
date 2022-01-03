@@ -1,4 +1,4 @@
-@mixin fcc{
+@mixin fcc {
   display: flex;
   position: relative;
 
@@ -7,7 +7,7 @@
 }
 
 
-.home{
+.home {
   @include fcc;
 
   width: 100%;
@@ -16,13 +16,13 @@
   background-color: #aae2ff;
 
 
-  .bulb{
+  .bulb {
     @include fcc;
 
     width: 50%;
     height: 50vw;
 
-    .bulb-glow{
+    .bulb-glow {
       position: absolute;
 
       top: 0;

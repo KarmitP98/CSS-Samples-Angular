@@ -1,92 +1,94 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 
 body {
+  font-family: 'Jura', sans-serif;
   position: relative;
   display: flex;
-  min-height: 100vh;
 
   align-items: center;
   justify-content: center;
 
-  background-color: lightgrey;
+  min-height: 100vh;
 
-  font-family: "Jura", sans-serif;
   color: white;
+  background-color: lightgrey;
 }
 
 .card {
   position: relative;
   display: flex;
-  flex-direction: column;
-
-  width: var(--width);
-  height: calc(var(--width) * 1.2);
   overflow: hidden;
 
-  border-radius: 5px;
-  padding: 16px;
+  flex-direction: column;
+  width: var(--width);
+  height: calc(var(--width) * 1.2);
 
+  padding: 16px;
   transition: 0.25s ease-in-out;
+
+  border-radius: 5px;
 
   background: white;
 
   &:before {
-    content: "";
     position: absolute;
-
-    width: 100%;
-    height: 100%;
+    z-index: 1;
 
     top: 100%;
     left: 0;
 
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    transition: 0.25s ease-in-out;
+
     border-radius: 5px;
 
     backdrop-filter: blur(10px);
-
-    z-index: 1;
-
-    transition: 0.25s ease-in-out;
   }
 
   .title {
-    font-weight: 700;
     font-size: 36px;
+    font-weight: 700;
     z-index: 2;
 
-    opacity: 0;
+    transition: 0.25s ease-in-out;
     transform: translateY(-1000px);
 
-    transition: 0.25s ease-in-out;
+    opacity: 0;
   }
 
   span {
     position: absolute;
-    width: 200%;
-    height: 100%;
     top: 0;
     left: 0;
+    width: 200%;
+    height: 100%;
 
-    background: #ee2732;
+    transition: 0.25s ease-in-out;
 
     transform: skewY(90deg);
 
-    transition: 0.25s ease-in-out;
+    background: #ee2732;
   }
 
   .image {
+    z-index: 2;
     display: flex;
-    margin: 8px 0;
+    align-items: center;
+    justify-content: center;
+
     width: 100%;
     height: 50%;
 
-    align-items: center;
-    justify-content: center;
+    margin: 8px 0;
 
     transition: 0.25s ease-in-out;
 
@@ -94,52 +96,50 @@ body {
       width: 60%;
       height: 100%;
     }
-
-    z-index: 2;
   }
 
   .content {
-    display: flex;
-    width: 100%;
-    justify-content: center;
     font-size: 24px;
     z-index: 2;
-
-    transform: translateY(2000px);
-    opacity: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
     transition: 0.25s ease-in-out;
+    transform: translateY(2000px);
+
+    opacity: 0;
   }
 
   .button {
     position: absolute;
-    display: flex;
-    width: 100%;
+    z-index: 2;
     bottom: 7%;
+    display: flex;
 
     align-items: center;
     justify-content: center;
 
-    z-index: 2;
-
-    transform: translateY(2000px);
-    opacity: 0;
+    width: 100%;
 
     transition: 0.25s ease-in-out;
+    transform: translateY(2000px);
+
+    opacity: 0;
 
 
     p {
-      font-weight: 700;
       font-size: x-large;
+      font-weight: 700;
       padding: 8px 24px;
-      background: white;
-
-      color: #ee2732;
-
-      border-radius: 5px;
       cursor: pointer;
 
       transition: 0.25s ease-in-out;
+
+      color: #ee2732;
+      border-radius: 5px;
+
+      background: white;
 
       &:hover {
         transform: scale(1.1);
@@ -157,13 +157,13 @@ body {
       top: 0;
     }
 
-    span{
+    span {
       transform: skewY(0deg);
     }
 
     .title {
-      opacity: 1;
       transform: translateY(0);
+      opacity: 1;
     }
 
 

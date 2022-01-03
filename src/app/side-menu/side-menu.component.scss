@@ -1,26 +1,26 @@
 * {
-  padding: 0;
-  margin: 0;
-
-  font-family: "Jura", sans-serif;
-  color: white;
+  font-family: 'Jura', sans-serif;
   font-weight: 700;
+
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
 main {
-  box-sizing: border-box;
-
-  display: flex;
   position: relative;
 
-  height: 100vh;
-  width: 100%;
-
-  background-color: #04cc8e;
+  display: flex;
+  overflow: hidden;
 
   align-items: center;
+  box-sizing: border-box;
 
-  overflow: hidden;
+  width: 100%;
+
+  height: 100vh;
+
+  background-color: #04cc8e;
 }
 
 .navbar {
@@ -28,10 +28,10 @@ main {
   display: flex;
 
   //width: 10vw;
-  height: 100%;
-
   align-items: center;
+
   justify-content: center;
+  height: 100%;
 
   .nav {
     position: relative;
@@ -41,60 +41,60 @@ main {
 
     height: 95%;
 
-    grid-template-columns: 100%;
-    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
-
-
     border-radius: 0 5px 5px 0;
+    grid-template-columns: 100%;
+
+
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
 
     .menu {
       position: relative;
       display: grid;
 
-      grid-template-rows: 1fr;
-      grid-template-columns: 180% 20%;
-
+      transition: 0.5s ease-out;
       transform: translateX(-180%);
 
-      transition: 0.5s ease-out;
+      grid-template-rows: 1fr;
+
+      grid-template-columns: 180% 20%;
 
       .menu-button {
+        font-size: 1rem;
+
         display: flex;
-
-        grid-column: 2/ span 1;
-        grid-row: 1/span 1;
-
-        writing-mode: vertical-lr;
-
-        justify-content: center;
         align-items: center;
 
-        padding: 2px;
+        justify-content: center;
 
+        padding: 2px;
         cursor: pointer;
 
         text-transform: uppercase;
-        font-size: 1rem;
+
         border: 1px solid white;
 
-        background-color: rgba(0, 0, 0, 1);
         border-radius: 0 5px 5px 0;
+        background-color: rgba(0, 0, 0, 1);
+        grid-column: 2/ span 1;
+
+        grid-row: 1/span 1;
+        writing-mode: vertical-lr;
 
       }
 
       .menu-content {
         display: flex;
-        grid-column: 1/ span 1;
-        grid-row: 1/span 1;
-
-        justify-content: center;
         align-items: center;
+        justify-content: center;
 
-        border-bottom: 1px solid white;
         border-top: 1px solid white;
+        border-bottom: 1px solid white;
+
+        background-color: rgba(0, 0, 0, 0.5);
+        grid-column: 1/ span 1;
         //border-right: 1px solid white;
         //border-radius: 0 5px 5px 0;
-        background-color: rgba(0, 0, 0, 0.5);
+        grid-row: 1/span 1;
 
       }
 
@@ -106,20 +106,20 @@ main {
     .all {
       display: flex;
 
-      width: fit-content;
-
-      padding: 8px;
-
-      justify-content: center;
       align-items: center;
 
-      background-color: black;
+      justify-content: center;
+
+      width: fit-content;
+      padding: 8px;
+
+      cursor: pointer;
       border-top: 1px solid white;
       border-right: 1px solid white;
       border-bottom: 1px solid white;
       border-radius: 0 5px 5px 0;
 
-      cursor: pointer;
+      background-color: black;
 
 
       &:hover {
@@ -138,40 +138,40 @@ main {
 
 #panel {
   position: absolute;
+  top: 2%;
+
+  right: calc(2%);
   display: flex;
+
+  align-items: flex-start;
+  justify-content: flex-start;
 
   width: 40px;
   height: fit-content;
 
-  justify-content: flex-start;
-  align-items: flex-start;
-
-  right: calc(2%);
-  top: 2%;
-
   button {
     display: flex;
 
-    flex-flow: column;
-
-    justify-content: space-evenly;
     align-items: center;
 
-    border: none;
-    border-radius: 5px;
-    background: #0c0326;
+    flex-flow: column;
+    justify-content: space-evenly;
 
     margin: 0 8px;
     padding: 8px;
-
     cursor: pointer;
 
-    .section {
-      font-family: "Chakra Petch", sans-serif;
-      font-size: 24px;
-      letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
 
+    background: #0c0326;
+
+    .section {
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 24px;
       user-select: none;
+
+      letter-spacing: 2px;
     }
 
     &::selection {
@@ -184,48 +184,48 @@ main {
     position: absolute;
     display: flex;
 
-    flex-flow: column;
-
-    justify-content: space-evenly;
     align-items: center;
+
+    flex-flow: column;
+    justify-content: space-evenly;
 
     width: 100px;
     height: 200px;
 
+    padding: 4px;
+
     list-style: none;
 
-    background-color: #0c0326;
-
-    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
 
     transform: translateX(-100%) scale(0);
     transform-origin: top right;
-    transition: all 0.1s ease-in-out;
+    border-radius: 5px;
 
-    padding: 4px;
+    background-color: #0c0326;
     gap: 4px;
 
     .list-item {
       display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+
+      height: 100%;
 
       cursor: pointer;
       user-select: none;
 
       transition: 0.3s ease-in-out;
 
-      text-decoration: none;
-
-      width: 100%;
-      height: 100%;
-
-      background-color: #0c0326;
-
       //border: 1px solid white;
-      border-radius: 5px;
-
       text-align: center;
-      justify-content: center;
-      align-items: center;
+
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: #0c0326;
 
       &.selected {
         background-color: #04cc8e;

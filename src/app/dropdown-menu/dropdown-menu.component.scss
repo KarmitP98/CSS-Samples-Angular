@@ -1,30 +1,30 @@
 * {
+  font-family: 'Jura', sans-serif;
   box-sizing: border-box;
-  font-family: "Jura", sans-serif;
 }
 
 body {
+  position: relative;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
   background: rgba(27, 45, 18, 1);
-  position: relative;
 }
 
 nav {
-  display: flex;
   position: relative;
+  display: flex;
   align-items: center;
   height: 10vh;
 }
 
 .dropdown {
-  height: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-around;
   width: 80%;
+  height: 100%;
   margin: auto;
-  align-items: center;
 
   .projects, .products {
     position: relative;
@@ -33,40 +33,40 @@ nav {
 
   .projects ul, .products ul {
     position: absolute;
-    background: white;
-    margin-top: 10px;
-    width: 200px;
-    height: 200px;
-    padding: 0 20px;
-
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-    list-style-type: none;
+    width: 200px;
 
-    border-radius: 5px;
-    opacity: 0;
-    pointer-events: none;
+    height: 200px;
+    margin-top: 10px;
+    padding: 0 20px;
+    list-style-type: none;
     transition: 0.2s ease-in-out;
+
     transform: translateY(-10px) scale(0);
     transform-origin: top right;
+    pointer-events: none;
+    opacity: 0;
+    border-radius: 5px;
+    background: white;
 
     li a {
+      font-family: 'Jura', sans-serif;
+      font-weight: 700;
       text-decoration: none;
       color: black;
-      font-family: "Jura", sans-serif;
-      font-weight: 700;
     }
 
     li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: auto;
       height: 100%;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      transition: 0.2s ease-in-out;
       cursor: pointer;
+      transition: 0.2s ease-in-out;
 
       &:hover {
         background: rgba(27, 45, 18, 0.5);
@@ -76,13 +76,13 @@ nav {
   }
 
   button {
-    background: none;
-    border: none;
-    color: white;
+    font-size: 18px;
     font-weight: 400;
     cursor: pointer;
-    font-size: 18px;
     transition: 0.2s;
+    color: white;
+    border: none;
+    background: none;
 
     &:hover {
       color: lightgrey;
@@ -90,9 +90,9 @@ nav {
 
     // Access the next element or element below it [Sibling]
     &:focus + ul {
-      opacity: 1;
-      pointer-events: all;
       transform: translateY(0px) scale(1);
+      pointer-events: all;
+      opacity: 1;
     }
 
   }
@@ -101,11 +101,11 @@ nav {
 .hamburger {
 
   position: absolute;
+  right: 5%;
   display: none;
+  align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
-  right: 5%;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -125,18 +125,18 @@ nav {
 
     .dropdown {
       position: absolute;
-      background: rgba(27, 0, 18, 1);
-      height: 100vh;
-      width: 100%;
-      align-self: center;
+      bottom: -90vh;
       display: flex;
+      align-items: center;
+      align-self: center;
       flex-direction: column;
       justify-content: space-around;
-      align-items: center;
-      bottom: -90vh;
-      clip-path: circle(0 at 100% 0%);
-      //-webkit-clip-path: circle(100px at 90% -10%);
+      width: 100%;
+      height: 100vh;
       transition: 0.3s ease-out;
+      background: rgba(27, 0, 18, 1);
+      //-webkit-clip-path: circle(100px at 90% -10%);
+      clip-path: circle(0 at 100% 0%);
 
       &.open {
         clip-path: circle(1500px at 90% -10%);
@@ -170,7 +170,3 @@ nav {
   }
 
 }
-
-
-
-

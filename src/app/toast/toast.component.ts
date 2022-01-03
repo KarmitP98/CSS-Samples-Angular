@@ -20,7 +20,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
       ]),
       transition('* => void', [
         style({
-          opacity: 0,
+          opacity: 0
           // transform: 'translateX(100px)'
         }),
         animate(300)

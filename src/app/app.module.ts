@@ -65,7 +65,7 @@ import {GridsComponent} from './grids/grids.component';
     ClipPathComponent,
     ClipPathRevealComponent,
     LoadUpComponent,
-    GridsComponent,
+    GridsComponent
   ],
   imports: [
     BrowserModule,
@@ -77,7 +77,7 @@ import {GridsComponent} from './grids/grids.component';
     MatCardModule,
     MatButtonModule,
     MatExpansionModule,
-    StoreModule.forRoot({num: numberReducer}, {}),
+    StoreModule.forRoot({num: numberReducer}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]

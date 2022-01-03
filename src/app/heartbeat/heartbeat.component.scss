@@ -1,29 +1,29 @@
 body {
+  font-family: Consolas;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   background: #031321;
-  font-family: Consolas;
 }
 
 a {
+  font-size: 24px;
   position: relative;
   display: inline-block;
-  padding: 30px 30px;
-  color: greenyellow;
-  background: greenyellow;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  text-decoration: none;
-  font-size: 24px;
   overflow: hidden;
+  padding: 30px 30px;
+  transition: 0.2s;
+  text-decoration: none;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: greenyellow;
   border-radius: 50%;
   //animation: heartbeat 1s forwards infinite;
+  background: greenyellow;
   filter: blur(1px);
-  transition: 0.2s;
 }
 
 a:hover {
@@ -47,4 +47,3 @@ a:hover {
     box-shadow: none;
   }
 }
-
