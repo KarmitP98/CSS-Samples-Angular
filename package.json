@@ -2,12 +2,13 @@
   "name": "css-samples",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve -o",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "ng" : "ng" ,
+    "start" : "ng serve -o" ,
+    "build" : "ng build" ,
+    "test" : "ng test" ,
+    "lint" : "ng lint" ,
+    "e2e" : "ng e2e" ,
+    "local-run" : "ng serve --host 10.0.0.189"
   },
   "private": true,
   "dependencies": {

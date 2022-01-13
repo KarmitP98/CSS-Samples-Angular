@@ -38,6 +38,7 @@ import {numberReducer} from './store/number.reducer';
 import {ClipPathRevealComponent} from './clip-path-reveal/clip-path-reveal.component';
 import {LoadUpComponent} from './load-up/load-up.component';
 import {GridsComponent} from './grids/grids.component';
+import {ClampsComponent} from './clamps/clamps.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import {GridsComponent} from './grids/grids.component';
     ClipPathComponent,
     ClipPathRevealComponent,
     LoadUpComponent,
-    GridsComponent
+    GridsComponent,
+    ClampsComponent
   ],
   imports: [
     BrowserModule,
