@@ -70,4 +70,69 @@
     }
   }
 
+
+  .bottom-menu {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    padding: 0 2rem 1rem;
+    transform: translateX(-50%);
+    border-radius: 500rem;
+    background-color: #4632a8;
+
+    .links {
+      display: flex;
+      gap: 2rem;
+
+      .link {
+        position: relative;
+        display: grid;
+        padding: 0.5rem;
+        cursor: pointer;
+        color: white;
+        border-radius: 0 0 50% 50%;
+        place-items: center;
+
+
+        &:after, &:before {
+          position: absolute;
+          top: 0;
+          width: 25px;
+          height: 25px;
+          content: '';
+        }
+
+        &:after {
+          right: -25px;
+          border-top-left-radius: 0;
+          box-shadow: none;
+        }
+
+        &:before {
+          left: -25px;
+          border-top-right-radius: 0;
+          box-shadow: none;
+        }
+
+        &.active {
+          color: #4632a8;
+          background-color: white;
+
+
+          &:after {
+            transition: all 0.125s ease-in-out;
+            border-top-left-radius: 50%;
+            box-shadow: -10px 0 0 0 white;
+          }
+
+          &:before {
+            transition: all 0.125s ease-in-out;
+            border-top-right-radius: 50%;
+            box-shadow: 10px 0 0 0 white;
+          }
+
+        }
+      }
+    }
+  }
 }

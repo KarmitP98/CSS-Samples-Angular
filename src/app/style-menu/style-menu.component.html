@@ -6,4 +6,15 @@
       >{{menu}}</div>
     </div>
   </div>
+
+  <div class='bottom-menu'>
+    <div class='links'>
+      <div
+        (click)='currentMenu = menu' *ngFor='let menu of menus;let i = index' [class.active]='menu === currentMenu'
+        class='link'
+      >
+        <mat-icon>home</mat-icon>
+      </div>
+    </div>
+  </div>
 </div>
