@@ -75,7 +75,7 @@
     position: absolute;
     bottom: 2rem;
     left: 50%;
-    padding: 0 2rem 1rem;
+    padding: 0 3rem 0.5rem;
     transform: translateX(-50%);
     border-radius: 500rem;
     background-color: #4632a8;
@@ -87,7 +87,7 @@
       .link {
         position: relative;
         display: grid;
-        padding: 0.5rem;
+        padding: 1rem;
         cursor: pointer;
         color: white;
         border-radius: 0 0 50% 50%;
