@@ -1,0 +1,10 @@
+<div class='folder-structure'>
+  <div class='folders'>
+    <div
+      (click)='setActiveTab(i)' *ngFor='let tab of tabs; let i = index' [class.active]='i === activeTab' class='folder'
+    >{{tab}}</div>
+  </div>
+  <div class='contents'>
+    <div *ngFor='let tab of tabs;let i = index' [class.active]='i === activeTab' class='content'>{{tab }} Content</div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class='page'>
+  <div class='side-menu'>
+    <div class='links'>
+      <div
+        (click)='currentMenu = menu' *ngFor='let menu of menus' [class.active]='menu === currentMenu' class='link'
+      >{{menu}}</div>
+    </div>
+  </div>
+</div>

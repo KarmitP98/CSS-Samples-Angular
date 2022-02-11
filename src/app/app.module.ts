@@ -39,6 +39,9 @@ import {ClipPathRevealComponent} from './clip-path-reveal/clip-path-reveal.compo
 import {LoadUpComponent} from './load-up/load-up.component';
 import {GridsComponent} from './grids/grids.component';
 import {ClampsComponent} from './clamps/clamps.component';
+import {FolderStructureComponent} from './folder-structure/folder-structure.component';
+import {PagedScrollingComponent} from './paged-scrolling/paged-scrolling.component';
+import {StyleMenuComponent} from './style-menu/style-menu.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +70,10 @@ import {ClampsComponent} from './clamps/clamps.component';
     ClipPathRevealComponent,
     LoadUpComponent,
     GridsComponent,
-    ClampsComponent
+    ClampsComponent,
+    FolderStructureComponent,
+    PagedScrollingComponent,
+    StyleMenuComponent
   ],
   imports: [
     BrowserModule,
