@@ -154,12 +154,32 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 60px;
-        height: 60px;
+        width: 56px;
+        height: 56px;
         transition: all 0.25s ease-in-out;
         border-bottom-right-radius: 50%;
         border-bottom-left-radius: 50%;
         background-color: white;
+
+        &:after, &:before {
+          position: absolute;
+          top: 0;
+          width: 25px;
+          height: 25px;
+          content: '';
+        }
+
+        &:before {
+          left: -25px;
+          border-top-right-radius: 50%;
+          box-shadow: 10px 0 0 0 white;
+        }
+
+        &:after {
+          right: -25px;
+          border-top-left-radius: 50%;
+          box-shadow: -10px 0 0 0 white;
+        }
       }
 
       .link {
@@ -168,12 +188,19 @@
         display: grid;
         padding: 1rem;
         cursor: pointer;
+        transition: all 0.5s ease-in-out;
         color: white;
         border-radius: 0 0 50% 50%;
         place-items: center;
 
         &.active {
           color: #4632a8;
+        }
+      }
+
+      @for $i from 1 through 5 {
+        .link:nth-child(#{$i}).active ~ .active-link {
+          transform: translateX(calc((56px + 2rem) * (#{$i} - 1)));
         }
       }
     }

@@ -21,7 +21,7 @@
   <div class='styled-menu'>
     <div class='links'>
       <div
-        (click)='selectMenu(menu, $event)' *ngFor='let menu of menus;let i = index'
+        (click)='currentMenu = menu' *ngFor='let menu of menus;let i = index'
         [class.active]='menu === currentMenu'
         class='link'
       >
