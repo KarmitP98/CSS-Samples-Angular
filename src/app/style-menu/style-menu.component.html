@@ -17,4 +17,17 @@
       </div>
     </div>
   </div>
+
+  <div class='styled-menu'>
+    <div class='links'>
+      <div
+        (click)='selectMenu(menu, $event)' *ngFor='let menu of menus;let i = index'
+        [class.active]='menu === currentMenu'
+        class='link'
+      >
+        <mat-icon>home</mat-icon>
+      </div>
+      <div #activeLink class='active-link'></div>
+    </div>
+  </div>
 </div>

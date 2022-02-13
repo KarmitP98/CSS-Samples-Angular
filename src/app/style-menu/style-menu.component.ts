@@ -15,4 +15,10 @@ export class StyleMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  selectMenu = (link: string, event: any) => {
+    this.currentMenu = link;
+    const left = event.currentTarget.getBoundingClientRect().left;
+    const activeButton = document.querySelector('.active-link');
+  };
+
 }
