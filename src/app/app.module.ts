@@ -42,6 +42,8 @@ import {ClampsComponent} from './clamps/clamps.component';
 import {FolderStructureComponent} from './folder-structure/folder-structure.component';
 import {PagedScrollingComponent} from './paged-scrolling/paged-scrolling.component';
 import {StyleMenuComponent} from './style-menu/style-menu.component';
+import {ImageZoomComponent} from './image-zoom/image-zoom.component';
+import {DragDropListComponent} from './drag-drop-list/drag-drop-list.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +75,9 @@ import {StyleMenuComponent} from './style-menu/style-menu.component';
     ClampsComponent,
     FolderStructureComponent,
     PagedScrollingComponent,
-    StyleMenuComponent
+    StyleMenuComponent,
+    ImageZoomComponent,
+    DragDropListComponent
   ],
   imports: [
     BrowserModule,
