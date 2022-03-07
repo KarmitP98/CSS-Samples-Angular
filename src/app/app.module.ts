@@ -44,7 +44,6 @@ import {PagedScrollingComponent} from './paged-scrolling/paged-scrolling.compone
 import {StyleMenuComponent} from './style-menu/style-menu.component';
 import {ImageZoomComponent} from './image-zoom/image-zoom.component';
 import {DragDropListComponent} from './drag-drop-list/drag-drop-list.component';
-import {ImgMagnifier} from 'ng-img-magnifier';
 import {NgxImageZoomModule} from 'ngx-image-zoom';
 
 @NgModule({
@@ -92,7 +91,6 @@ import {NgxImageZoomModule} from 'ngx-image-zoom';
     MatButtonModule,
     MatExpansionModule,
     StoreModule.forRoot({num: numberReducer}, {}),
-    ImgMagnifier,
     NgxImageZoomModule
   ],
   providers: [],
