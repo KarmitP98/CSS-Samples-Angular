@@ -1,0 +1,45 @@
+.progress-bar {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  height: 20px;
+  border-radius: 0.25rem;
+  background-color: rgba(70, 50, 168, 0.15);
+
+  .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: width 0.125s ease-in-out;
+    background-color: #4632a8;
+
+    &.determinate {
+      width: calc(var(--progress) * 1%);
+    }
+
+    &.indeterminate {
+      width: 100%;
+      animation: animate-determinate 2s cubic-bezier(.95, .24, .62, .91) infinite;
+    }
+
+    &.query {
+      width: 100%;
+      animation: animate-determinate 2s cubic-bezier(.95, .24, .62, .91) infinite reverse;
+    }
+  }
+}
+
+@keyframes animate-determinate {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+
+}

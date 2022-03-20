@@ -45,6 +45,7 @@ import {StyleMenuComponent} from './style-menu/style-menu.component';
 import {ImageZoomComponent} from './image-zoom/image-zoom.component';
 import {DragDropListComponent} from './drag-drop-list/drag-drop-list.component';
 import {NgxImageZoomModule} from 'ngx-image-zoom';
+import {ProgressBarComponent} from './progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +79,8 @@ import {NgxImageZoomModule} from 'ngx-image-zoom';
     PagedScrollingComponent,
     StyleMenuComponent,
     ImageZoomComponent,
-    DragDropListComponent
+    DragDropListComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
