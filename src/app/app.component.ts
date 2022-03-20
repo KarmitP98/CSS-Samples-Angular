@@ -20,10 +20,10 @@ export class AppComponent {
       }
     });
 
-    setInterval(() => {
-      if (this.progress === 100) {this.progress = -1; }
-      this.progress++;
-    }, 1000);
+    // setInterval(() => {
+    //   if (this.progress === 100) {this.progress = -1; }
+    //   this.progress++;
+    // }, 1000);
   }
 
   add = (val: number) => {
