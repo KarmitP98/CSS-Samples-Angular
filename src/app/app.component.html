@@ -27,4 +27,10 @@
 <!--{{value}}-->
 <!--<app-image-zoom></app-image-zoom>-->
 <!--<app-drag-drop-list></app-drag-drop-list>-->
-<app-progress-bar [progress]='10' mode='query'></app-progress-bar>
+<div style='padding: 5rem'>
+  <app-progress-bar
+    [barColor]='["#E2B697","#5B3521"]' [progress]='progress' backgroundColor='rgba(226, 183, 152, 0.2)'
+    mode='determinate'
+  ></app-progress-bar>
+</div>
+<!--<progress-bar-angular mode='determinate' [progress]='50'></progress-bar-angular>-->
