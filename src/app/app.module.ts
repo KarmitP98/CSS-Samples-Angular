@@ -46,7 +46,6 @@ import {ImageZoomComponent} from './image-zoom/image-zoom.component';
 import {DragDropListComponent} from './drag-drop-list/drag-drop-list.component';
 import {NgxImageZoomModule} from 'ngx-image-zoom';
 import {ProgressBarComponent} from './progress-bar/progress-bar.component';
-import {ProgressBarAngularModule} from 'progress-bar-angular';
 
 @NgModule({
   declarations: [
@@ -95,7 +94,6 @@ import {ProgressBarAngularModule} from 'progress-bar-angular';
     MatExpansionModule,
     StoreModule.forRoot({num: numberReducer}, {}),
     NgxImageZoomModule,
-    ProgressBarAngularModule
   ],
   providers: [],
   bootstrap: [AppComponent]

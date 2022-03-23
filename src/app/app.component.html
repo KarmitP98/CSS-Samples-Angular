@@ -27,23 +27,8 @@
 <!--{{value}}-->
 <!--<app-image-zoom></app-image-zoom>-->
 <!--<app-drag-drop-list></app-drag-drop-list>-->
-<div style='padding: 5rem'>
-  <!--  <app-progress-bar-->
-  <!--    [barColor]='["#E2B697","#5B3521"]' [progress]='progress' backgroundColor='rgba(226, 183, 152, 0.2)'-->
-  <!--    mode='determinate'-->
-  <!--  ></app-progress-bar>-->
-</div>
-<div
-  style='width: 75%; position:relative;display:flex;align-items:center;justify-content:center;padding: 3rem'
->
-  <progress-bar-angular
-    [animatedBuffer]='true'
-    [barColor]='["#E2B697","#5B3521"]'
-    backgroundColor='rgba(226, 183, 152, 0.2)'
-    mode='buffer'
-    [progress]='progress'
-    borderRadius='full'
-  >
-  </progress-bar-angular>
-</div>
+<app-progress-bar
+  [barColor]='["#E2B697","#5B3521"]' [progress]='progress' backgroundColor='rgba(226, 183, 152, 0.2)'
+  mode='determinate'
+></app-progress-bar>
 <!--<progress-bar-angular mode='determinate' [progress]='50'></progress-bar-angular>-->
