@@ -28,7 +28,9 @@
 <!--<app-image-zoom></app-image-zoom>-->
 <!--<app-drag-drop-list></app-drag-drop-list>-->
 <app-progress-bar
-  [barColor]='["#E2B697","#5B3521"]' [progress]='progress' backgroundColor='rgba(226, 183, 152, 0.2)'
-  mode='determinate'
+  [animated]='true'
+  [progress]='progress'
+  backgroundColor='rgba(226, 183, 152, 0.2)'
+  mode='buffer'
 ></app-progress-bar>
 <!--<progress-bar-angular mode='determinate' [progress]='50'></progress-bar-angular>-->

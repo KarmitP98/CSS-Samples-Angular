@@ -31,24 +31,28 @@
     width: 100%;
     height: 100%;
     transition: left 0.25s cubic-bezier(.95, .24, .62, .91);
-    background: var(--progress-bar-color);
+    background: linear-gradient(-45deg, var(--progress-bar-color));
 
     &.determinate {
       left: calc((var(--progress) * 1%) - 100%);
+
+      &.animated {
+        animation: animate-determinate 2.5s linear infinite alternate;
+        background-size: 200% 200%;
+      }
     }
 
     &.indeterminate {
-      animation: animate-determinate 2s cubic-bezier(.95, .24, .62, .91) infinite;
+      animation: animate-indeterminate 2s cubic-bezier(.95, .24, .62, .91) infinite;
     }
 
     &.query {
-      animation: animate-determinate 2s cubic-bezier(.95, .24, .62, .91) infinite reverse;
+      animation: animate-indeterminate 2s cubic-bezier(.95, .24, .62, .91) infinite reverse;
     }
 
     &.buffer {
       width: 200%;
-
-      background: var(--buffer-bar-color);
+      background: repeating-linear-gradient(-45deg, var(--progress-bar-color));
 
       &.animated {
         animation: animate-buffer 7.5s linear infinite;
@@ -66,7 +70,7 @@
   }
 }
 
-@keyframes animate-determinate {
+@keyframes animate-indeterminate {
   0% {
     left: -100%;
   }
@@ -76,5 +80,16 @@
   100% {
     left: 100%;
   }
+}
 
+@keyframes animate-determinate {
+  0% {
+    background-position-x: left;
+  }
+  50% {
+    background-position-x: right;
+  }
+  100% {
+    background-position-x: left;
+  }
 }

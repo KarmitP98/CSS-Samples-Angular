@@ -35,7 +35,7 @@ export class ProgressBarComponent implements OnInit {
    * string[]: Linear Gradient color.
    * @type {string | string[]}
    */
-  @Input() barColor?: ProgressBarAngularBarColor = '#ffffff';
+  @Input() barColor?: ProgressBarAngularBarColor;
   /**
    * Height of the progress bar.
    * Inputs: '10px' | '10%' | '10rem' | ... etc.
@@ -52,35 +52,43 @@ export class ProgressBarComponent implements OnInit {
    * Selector to animate the 'buffer' progress-bar.
    * @type {boolean}
    */
-  @Input() animatedBuffer = true;
+  @Input() animated = false;
   /**
    * Border Radius of the progress bar
    * @type {ProgressBarAngularBorderRadius}
    */
   @Input() borderRadius?: ProgressBarAngularBorderRadius = 'md';
 
-  progressBarColor = '#000000';
-  bufferProgressBarColor = 'repeating-linear-gradient(to bottom right, #000000 0px, #000000 10px, #ffffff 10px, #ffffff 20px)';
-
   constructor() {
   }
 
   ngOnInit() {
     this.progress = Math.min(this.progress, 100);
-    this.setProgressBarColor();
   }
 
   /**
-   * Set the progress bar color based on the input color/s.
+   * Get Progress Bar Color
+   * @returns {string | undefined}
    */
-  private setProgressBarColor = () => {
-    if (this.barColor && typeof this.barColor === 'string') {
-      this.progressBarColor = this.barColor;
-      this.bufferProgressBarColor = `repeating-linear-gradient(-45deg, ${this.barColor} 0px, ${this.barColor} 10px, #ffffff 10px, #ffffff 20px)`;
-    } else if (this.barColor && Array.isArray(this.barColor)) {
-      this.progressBarColor = `linear-gradient(to bottom right, ${this.barColor.join(',')})`;
-      const bufferColors = this.barColor.map((value, index) => (`${value} ${index * 10}px, ${value} ${(index + 1) * 10}px`));
-      this.bufferProgressBarColor = `repeating-linear-gradient(-45deg, ${bufferColors.join(',')})`;
+  getProgressBarColor = () => {
+    if (this.barColor) {
+      if (typeof this.barColor === 'string') {
+        if (this.mode === 'buffer') {
+          return `${this.barColor} 0px, ${this.barColor} 10px, #ffffff 10px, #ffffff 20px`;
+        }
+        return `${this.barColor} ${this.barColor}`;
+      } else {
+        if (this.mode === 'buffer') {
+          return this.barColor?.map((value, index) => (`${value} ${index * 10}px, ${value} ${(index + 1) * 10}px`)).join(',');
+        }
+        return this.barColor?.join(',');
+      }
+    } else {
+      if (this.mode === 'buffer') {
+        return `black 0, black 10px, white 10px, white 20px`;
+      }
+      return `black, black`;
     }
   };
+
 }

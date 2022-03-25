@@ -5,9 +5,8 @@
   class='progress-bar'
 >
   <div
-    [ngClass]='[mode, animatedBuffer ? "animated" : ""]'
-    [style.--buffer-bar-color]='bufferProgressBarColor'
-    [style.--progress-bar-color]='progressBarColor'
+    [ngClass]='[mode, animated ? "animated" : ""]'
+    [style.--progress-bar-color]='getProgressBarColor()'
     [style.--progress]='progress'
     class='progress'
   ></div>

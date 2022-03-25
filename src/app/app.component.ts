@@ -9,7 +9,7 @@ import {Store} from '@ngrx/store';
 export class AppComponent {
   title = 'CSS-Samples';
   value = 0;
-  progress = 0;
+  progress = 100;
 
   constructor(public store: Store<{ num: number }>) {
     this.store.select('num').subscribe((value1) => {
@@ -20,10 +20,10 @@ export class AppComponent {
       }
     });
 
-    setInterval(() => {
-      if (this.progress === 100) {this.progress = -1; }
-      this.progress += 5;
-    }, 1000);
+    // setInterval(() => {
+    //   if (this.progress === 100) {this.progress = -1; }
+    //   this.progress += 5;
+    // }, 1000);
   }
 
   add = (val: number) => {
