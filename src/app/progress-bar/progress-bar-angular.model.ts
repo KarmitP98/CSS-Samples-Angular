@@ -5,7 +5,7 @@ export class ProgressBarAngularModel {
   backgroundColor?: string = '#fff';
   height?: string = '20px';
   width?: string = '100%';
-  animatedBuffer?: boolean = true;
+  animated?: boolean = false;
   borderRadius?: ProgressBarAngularBorderRadius = 'md';
 }
 
@@ -13,4 +13,4 @@ export type ProgressBarAngularMode = 'determinate' | 'query' | 'indeterminate' |
 
 export type ProgressBarAngularBarColor = string | string[];
 
-export type ProgressBarAngularBorderRadius = 'square' | 'sm' | 'md' | 'lg' | 'full'
+export type ProgressBarAngularBorderRadius = 'square' | 'sm' | 'md' | 'lg' | 'full';
