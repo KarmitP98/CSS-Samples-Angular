@@ -27,11 +27,13 @@
 <!--{{value}}-->
 <!--<app-image-zoom></app-image-zoom>-->
 <!--<app-drag-drop-list></app-drag-drop-list>-->
-<app-progress-bar
+<!-- <app-progress-bar
   [animated]='true'
   [progress]='progress'
   backgroundColor='rgba(226, 183, 152, 0.2)'
   mode='determinate'
   [barColor]='["black","white"]'
-></app-progress-bar>
+></app-progress-bar> -->
 <!--<progress-bar-angular mode='determinate' [progress]='50'></progress-bar-angular>-->
+<app-form></app-form>
+<button (click)='showLoadingDialog()' mat-raised-button>Show Dialog</button>

@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 import {Store} from '@ngrx/store';
+import {MatDialog} from '@angular/material/dialog';
+import {DialogLoadingComponent} from './dialog-loading/dialog-loading.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +13,8 @@ export class AppComponent {
   value = 0;
   progress = 100;
 
-  constructor(public store: Store<{ num: number }>) {
+  constructor(public store: Store<{ num: number }>,
+              private dialog: MatDialog) {
     this.store.select('num').subscribe((value1) => {
       if (value1) {
         // @ts-ignore
@@ -33,4 +36,8 @@ export class AppComponent {
   sub = (val: number) => {
     this.store.dispatch({type: 'SUB'});
   };
+
+  public showLoadingDialog(): void {
+    this.dialog.open(DialogLoadingComponent, {id: 'loading-dialog'});
+  }
 }

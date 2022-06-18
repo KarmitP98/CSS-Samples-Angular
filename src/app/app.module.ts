@@ -46,6 +46,11 @@ import {ImageZoomComponent} from './image-zoom/image-zoom.component';
 import {DragDropListComponent} from './drag-drop-list/drag-drop-list.component';
 import {NgxImageZoomModule} from 'ngx-image-zoom';
 import {ProgressBarComponent} from './progress-bar/progress-bar.component';
+import {FormComponent} from './form/form.component';
+import {DialogLoadingComponent} from './dialog-loading/dialog-loading.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {TestDialogComponent} from './test-dialog/test-dialog.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +85,10 @@ import {ProgressBarComponent} from './progress-bar/progress-bar.component';
     StyleMenuComponent,
     ImageZoomComponent,
     DragDropListComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    FormComponent,
+    DialogLoadingComponent,
+    TestDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -94,6 +102,8 @@ import {ProgressBarComponent} from './progress-bar/progress-bar.component';
     MatExpansionModule,
     StoreModule.forRoot({num: numberReducer}, {}),
     NgxImageZoomModule,
+    MatDialogModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
